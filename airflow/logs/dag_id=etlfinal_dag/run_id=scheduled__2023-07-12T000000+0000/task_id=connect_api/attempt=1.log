@@ -1,0 +1,13 @@
+[2023-07-14T19:30:53.141+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etlfinal_dag.connect_api scheduled__2023-07-12T00:00:00+00:00 [queued]>
+[2023-07-14T19:30:53.159+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etlfinal_dag.connect_api scheduled__2023-07-12T00:00:00+00:00 [queued]>
+[2023-07-14T19:30:53.161+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 1
+[2023-07-14T19:30:53.193+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): connect_api> on 2023-07-12 00:00:00+00:00
+[2023-07-14T19:30:53.203+0000] {standard_task_runner.py:57} INFO - Started process 66 to run task
+[2023-07-14T19:30:53.221+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'etlfinal_dag', 'connect_api', 'scheduled__2023-07-12T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/etlfinal_dag.py', '--cfg-path', '/tmp/tmp4goq9rxl']
+[2023-07-14T19:30:53.224+0000] {standard_task_runner.py:85} INFO - Job 3: Subtask connect_api
+[2023-07-14T19:30:53.314+0000] {task_command.py:410} INFO - Running <TaskInstance: etlfinal_dag.connect_api scheduled__2023-07-12T00:00:00+00:00 [running]> on host 9858b29aeb47
+[2023-07-14T19:30:53.469+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='juanmacabral_coderhouse' AIRFLOW_CTX_DAG_ID='etlfinal_dag' AIRFLOW_CTX_TASK_ID='connect_api' AIRFLOW_CTX_EXECUTION_DATE='2023-07-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-07-12T00:00:00+00:00'
+[2023-07-14T19:30:57.047+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-07-14T19:30:57.060+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=etlfinal_dag, task_id=connect_api, execution_date=20230712T000000, start_date=20230714T193053, end_date=20230714T193057
+[2023-07-14T19:30:57.108+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-07-14T19:30:57.149+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check
